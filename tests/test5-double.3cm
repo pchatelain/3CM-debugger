@@ -1,0 +1,6 @@
+zero x 6 else 2 
+dec x
+inc y
+inc y
+zero x 6 else 2
+stop

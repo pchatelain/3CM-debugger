@@ -1,0 +1,3 @@
+dec y
+zero y 1 else 3
+stop

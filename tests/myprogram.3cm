@@ -1,0 +1,11 @@
+inc y
+zero x 11 else 3
+dec x
+dec y
+inc z
+zero y 7 else 4 
+dec z
+inc y
+inc y
+zero z 2 else 7
+stop
