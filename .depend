@@ -1,0 +1,19 @@
+analysis.cmi: interval.cmi ast.cmo 
+interval.cmi: 
+parser.cmi: ast.cmo 
+analysis.cmo: interval.cmi ast.cmo analysis.cmi 
+analysis.cmx: interval.cmx ast.cmx analysis.cmi 
+ast.cmo: 
+ast.cmx: 
+eval.cmo: ast.cmo 
+eval.cmx: ast.cmx 
+lexer.cmo: parser.cmi 
+lexer.cmx: parser.cmx 
+main.cmo: wellformed.cmo parser.cmi lexer.cmo eval.cmo ast.cmo analysis.cmi 
+main.cmx: wellformed.cmx parser.cmx lexer.cmx eval.cmx ast.cmx analysis.cmx 
+interval.cmo: interval.cmi 
+interval.cmx: interval.cmi 
+parser.cmo: ast.cmo parser.cmi 
+parser.cmx: ast.cmx parser.cmi 
+wellformed.cmo: ast.cmo 
+wellformed.cmx: ast.cmx 
